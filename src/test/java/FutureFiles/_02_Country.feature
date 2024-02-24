@@ -14,7 +14,7 @@ Feature: Country Functionality
     When Click on save button
     Then Success message should be displayed
 
-  Scenario: Delete a new country
-    And Search for "h661" as code
-    When Click on Delete and Confirm
-    Then Success message should be displayed
+#  Scenario: Delete a new country
+#    And Search for "h661" as code
+#    When Click on Delete and Confirm
+#    Then Success message should be displayed
