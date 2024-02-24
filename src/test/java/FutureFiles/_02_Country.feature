@@ -6,7 +6,7 @@ Feature: Country Functionality
     Given Navigate to Campus
     And Enter username and password
     And Click on login Button
-    And Navigate to Country page
+    And I navigate to country list
 
   Scenario: Create a new country
     And Click on add Button

@@ -27,6 +27,7 @@ public class _02_Country {
 
     @And("Click on login Button")
     public void clickOnLoginButton() {
+        MyMethods2.myWait(3);
         dialogContent.loginButton.click();
     }
 
@@ -85,5 +86,12 @@ public class _02_Country {
     public void searchForAsCountryNameAndAsCode(String codeInbox) {
         dialogContent.sendKeysMethod(dialogContent.codeInboxNew,codeInbox);
         dialogContent.clickMethod(dialogContent.searchButton);
+    }
+
+    @And("I navigate to country list")
+    public void iNavigateToCountryList() {
+        MyMethods2.myWait(3);
+        ParameterDriver.getDriver().navigate().to("https://test.mersys.io/countries/list");
+
     }
 }
